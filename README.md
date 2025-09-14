@@ -3,7 +3,7 @@
 Semantic segmentation framework to detect **biofouling**, **vegetation**, and **net holes** on aquaculture net pens using underwater imagery.  
 It implements a **multi-scale encoder–decoder** with three custom blocks—**Identity Block (IB)**, **Shape-Preservation Block (SPB)**, and **Hierarchical Decomposition Block (HDB)**—and a tailored **L_t** loss that blends two sub-objectives to handle class imbalance and stabilize convergence.
 
-> This repository accompanies the paper *Aquaculture defects recognition via multi-scale semantic segmentation* by W. Akram, T. Hassan, H. Toubar, M. Ahmed, N. Miškovic, L. Seneviratne, and I. Hussain (preprint submitted to Elsevier). See **Citation** below.
+> This repository accompanies the paper *Akram, W., Hassan, T., Toubar, H., Ahmed, M., Miškovic, N., Seneviratne, L., & Hussain, I. (2024). Aquaculture defects recognition via multi-scale semantic segmentation*. Expert systems with applications, 237, 121197.
 
 ---
 
@@ -33,7 +33,7 @@ It implements a **multi-scale encoder–decoder** with three custom blocks—**I
 | NDv1 | 1,864 | ✓ | ✓ | ✗ | Public (Roboflow); pixel-wise masks prepared by authors |
 | NDv2 | 1,411 | ✓ | ✓ | ✗ | Public (Roboflow); pixel-wise masks prepared by authors |
 
-> The paper reports pixel-wise annotations for NDv1/NDv2 and new releases of LABUST/KU. Please check dataset licenses/availability and place paths in `configs/*.yaml`.
+> The paper reports pixel-wise annotations for NDv1/NDv2 and new releases of LABUST/KU dataset.
 
 ---
 
@@ -43,7 +43,9 @@ It implements a **multi-scale encoder–decoder** with three custom blocks—**I
 - **HDB** blends features with average pooling + conv + BN + ReLU across scales; **SPB** preserves geometry with residual fusion; **IB** follows a ResNet-style pattern.
 - Decoder is asymmetric and upsamples via **strided convolutions** (not bilinear interpolation) for sharper masks.
 
-> See Fig. 2 in the paper for the full diagram. If you export it, drop it into `docs/figures/architecture.png` and reference it here.
+> See Fig. 2 in the paper for the full diagram.
+> ![Multi-scale encoder–decoder architecture](Picture1.png)
+
 
 ---
 
