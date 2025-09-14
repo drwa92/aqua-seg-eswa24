@@ -63,5 +63,19 @@ It implements a **multi-scale encoder–decoder** with three custom blocks—**I
 
 ##  Results
 
+<a id="fig-qual-1"></a>
+<p align="center">
+  <img src="Picture3.jpg" alt="Qualitative predictions with segmentation overlays (examples A–L)" width="1000">
+</p>
+<p align="center"><em>Figure 1. Qualitative examples showing underwater frames and predicted segmentation overlays (A–L).</em></p>
+
+<a id="fig-qual-ndv2"></a>
+<p align="center">
+  <img src="qual_ndv2.png" alt="NDv2 qualitative grid with frames and predicted masks (A–X)" width="1000">
+</p>
+<p align="center"><em>Figure 2. NDv2 qualitative results (A–X). Left columns: sample frames; right columns: predicted masks.</em></p>
+
+See Figures <a href="#fig-qual-1">1</a> and <a href="#fig-qual-ndv2">2</a> for qualitative segmentation performance.
+
 
 
