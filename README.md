@@ -3,6 +3,8 @@
 Semantic segmentation framework to detect **biofouling**, **vegetation**, and **net holes** on aquaculture net pens using underwater imagery.  
 It implements a **multi-scale encoder–decoder** with three custom blocks—**Identity Block (IB)**, **Shape-Preservation Block (SPB)**, and **Hierarchical Decomposition Block (HDB)**—and a tailored **L_t** loss that blends two sub-objectives to handle class imbalance and stabilize convergence.
 
+> ![](abstract-fig.png)
+
 > This repository accompanies the paper *Akram, W., Hassan, T., Toubar, H., Ahmed, M., Miškovic, N., Seneviratne, L., & Hussain, I. (2024). Aquaculture defects recognition via multi-scale semantic segmentation*. Expert systems with applications, 237, 121197.
 
 ---
@@ -59,8 +61,7 @@ It implements a **multi-scale encoder–decoder** with three custom blocks—**I
 
 ---
 
-## 🔧 Install
+##  Results
 
-```bash
-# (Recommended) Create a venv or conda env, then:
-pip install -r requirements.txt
+
+
